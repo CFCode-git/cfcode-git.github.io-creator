@@ -1,4 +1,4 @@
-baseURL = "https://chow1027.xyz/"
+baseURL = "http://example.org/"
 languageCode = "zh-Hans"
 title = "呆尬猴的博客"
 theme = "ananke"
