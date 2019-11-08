@@ -6,6 +6,8 @@ draft: false
 
 # 什么是css盒模型？
 
+![图1](/images/1.png)
+
 根据[css 2.1 中文版](http://www.ayqy.net/doc/css2-1/box.html)文档的描述:  
 CSS盒模型描述了一个为文档树中的元素生成的并根据视觉格式化模型进行布局的矩形框。
 
