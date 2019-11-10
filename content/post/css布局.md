@@ -17,17 +17,17 @@ float布局、flex布局、grid布局。
 
 # float布局
 
-**步骤**
-1. 给子元素加上`float:left | right;`
-2. 给父元素加上`.clearfix`
+**步骤**  
+1. 给子元素加上`float:left | right;`  
+2. 给父元素加上`.clearfix`  
 
-**经验**
-1. 一般会预留一些空间或者最后一个元素width不写死。
-2. 不需要做响应式，因为手机页面没有IE，而float布局是专门为IE设计的。
-3. IE6/7存在双倍margin的bug，解决办法是
-   * 针对IE6/7对margin减半
-   * 再加一个`display:inline-block;`
-4. 用"outline"代替"border",可以使得边框不占据内部的空间(outline不在border-box的width计算范围内)
+**经验**  
+1. 一般会预留一些空间或者最后一个元素width不写死。  
+2. 不需要做响应式，因为手机页面没有IE，而float布局是专门为IE设计的。  
+3. IE6/7存在双倍margin的bug，解决办法是  
+   * 针对IE6/7对margin减半  
+   * 再加一个`display:inline-block;`  
+4. 用"outline"代替"border",可以使得边框不占据内部的空间(outline不在border-box的width计算范围内)  
 
 ~~~css
 .float {
@@ -103,22 +103,22 @@ container--容器(父元素) item--项目(容器内的子块；子元素)
 }
 ~~~
 
-**class = "item"**
-1. 用order值排序，由小到大排列；
-2. 用flex-grow控制"长胖"，设置的值越大，得到的多余空间越多。
-3. 用flex-shrink控制"变瘦"，设置的值越大，在空间不够时压缩得越大。(默认是1，一般设置为0防止压缩)
-4. flex-basis控制宽度
-5. 缩写flex-grow flex-shrink flex-basis 为 flex。
-6. 通过align-self定制某个item的align-items。
-
-**经验**
-1. 永远不要把width和height写死。
-2. 用min/max-height和min/max-width。 
-3. flex可以基本满足所有需求
-4. flex与margin-xxx:auto配合有意外效果。(往反方向写，比如向左靠就写margin-right:auto;)
+**class = "item"**  
+1. 用order值排序，由小到大排列；  
+2. 用flex-grow控制"长胖"，设置的值越大，得到的多余空间越多。  
+3. 用flex-shrink控制"变瘦"，设置的值越大，在空间不够时压缩得越大。(默认是1，一般设置为0防止压缩)  
+4. flex-basis控制宽度  
+5. 缩写flex-grow flex-shrink flex-basis 为 flex。  
+6. 通过align-self定制某个item的align-items。  
+ 
+**经验**  
+1. 永远不要把width和height写死。  
+2. 用min/max-height和min/max-width。   
+3. flex可以基本满足所有需求  
+4. flex与margin-xxx:auto配合有意外效果。(往反方向写，比如向左靠就写margin-right:auto;)  
 
 # 负margin
-采用float和flex写平均布局时常常要用到负margin。
+采用float和flex写平均布局时常常要用到负margin。  
 
 ![我的理解负margin](/images/-margin.jpg)
 
