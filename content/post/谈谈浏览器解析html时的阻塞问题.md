@@ -7,11 +7,12 @@ draft: false
 参考文章：    
 
 [DOM阻塞总结](https://www.jianshu.com/p/8fd296377539)    
+
 [深入浅出浏览器渲染原理](https://blog.fundebug.com/2019/01/03/understand-browser-rendering/)     
-[浏览器是如何解析html的？](https://juejin.im/post/5c1dde33f265da61776bf49a)     
-[](https://javascript.info/onload-ondomcontentloaded)     
-[](https://www.zhihu.com/question/30218438)     
-[](https://juejin.im/entry/5c6b629be51d457fa31e6a1d)     
+
+[浏览器是如何解析html的？](https://juejin.im/post/5c1dde33f265da61776bf49a)       
+
+[浏览器阻塞](https://juejin.im/entry/5c6b629be51d457fa31e6a1d)     
 
 
 # 浏览器是如何工作的?
